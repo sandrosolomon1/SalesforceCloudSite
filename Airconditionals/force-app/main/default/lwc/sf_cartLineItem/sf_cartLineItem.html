@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-19-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="cartitem">
+        <lightning-card  title="Product">
+            <lightning-button disabled={disableAction} variant="destructive-text" label="Delete Cart Line Item" slot="actions" onclick={handleAction}></lightning-button>
+            <div class="slds-p-horizontal_small item"> 
+                <div class="qty">
+                    <p>Quantity : <lightning-input value={qty} type="number" onchange={handleQtyChange} class="qtyInput"></lightning-input></p>
+                    <lightning-button disabled={disableSave} label="Save" title="Non-primary action" onclick={handleSave} class="slds-m-left_x-small"></lightning-button>
+                </div>
+                <div class="price">
+                    <p>Price : <lightning-formatted-number value={price} format-style="currency" currency-code="USD"></lightning-formatted-number></p>
+                </div>
+            </div>
+            <div class="slds-p-horizontal_small">
+                Description
+            </div>
+        </lightning-card>
+    </div>
+</template>

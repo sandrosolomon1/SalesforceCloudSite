@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-16-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card  title="My Account Details">
+        <lightning-button label={actionButtonLabel} slot="actions" onclick={handleAction} ></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-input disabled={disabled} name="name" onchange={handleChange} value={name} type="text" label="Name"></lightning-input>
+            <lightning-input disabled={disabled} name="street" onchange={handleChange} value={shippingStreet} type="text" label="ShippingStreet"></lightning-input>
+            <lightning-input disabled={disabled} name="country" onchange={handleChange} value={shippingCountry} type="text" label="ShippingCountry"></lightning-input>
+            <lightning-input disabled={disabled} name="code" onchange={handleChange} value={shippingPostalCode} type="text" label="ShippingPostalCode"></lightning-input>
+            <lightning-input disabled={disabled} name="state" onchange={handleChange} value={shippingState} type="text" label="ShippingState"></lightning-input>
+        </p>
+    </lightning-card>
+</template>

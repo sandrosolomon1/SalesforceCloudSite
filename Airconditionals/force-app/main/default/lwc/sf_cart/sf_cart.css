@@ -1,0 +1,27 @@
+.content {
+    margin-top: 2rem;
+}
+
+.cart-details {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.cart {
+    display:flex;
+}
+
+.cart-details-item {
+    border: 1px solid rgb(153, 153, 153);
+    padding: 1rem 2rem;
+    border-radius: 10%
+}
+
+.actions {
+    margin: auto
+}
+
+.cart-action {
+    font-size: 1.1rem
+}
